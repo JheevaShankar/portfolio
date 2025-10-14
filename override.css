@@ -1,0 +1,54 @@
+/* 
+   Override styles to ensure content visibility
+   For JheevaShankar's portfolio website
+*/
+
+/* Force visibility of key sections */
+.skills-content, .projects-grid {
+    display: grid !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.skill-card, .project-card {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}
+
+/* Ensure section heights */
+.skills, .projects {
+    min-height: 300px;
+}
+
+/* Force proper section spacing */
+section {
+    padding: 80px 0 !important;
+    margin: 0 !important;
+    display: block !important;
+    position: relative !important;
+}
+
+/* Ensure section headers are visible */
+.section-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-bottom: 50px !important;
+}
+
+/* Force project cards to display in rows if needed */
+@media screen and (max-width: 768px) {
+    .projects-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+}
+
+/* Guarantee that images display */
+.project-img img {
+    display: inline-block !important;
+    width: 100% !important;
+    height: auto !important;
+}

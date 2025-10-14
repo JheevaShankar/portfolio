@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JheevaShankar - Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Preloader and Section Visibility Handler -->
+    <script>
+        // Handle preloader early
+        if (document.readyState === 'complete') {
+            document.body.classList.add('loaded');
+        } else {
+            window.addEventListener('load', function() {
+                document.body.classList.add('loaded');
+            });
+        }
+        // Fallback - force remove after 2 seconds
+        setTimeout(function() {
+            document.body.classList.add('loaded');
+        }, 2000);
+        
+        // Make sure all sections are visible regardless of animation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Force all reveal elements to be visible
+            document.querySelectorAll('.reveal').forEach(function(el) {
+                el.classList.add('active');
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header and Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Jheeva<span>Shankar</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="hero-particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-intro animate-fade-in">Welcome to my Portfolio</div>
+                <h1 class="hero-title animate-fade-in">
+                    Hi, I'm <span class="highlight">JheevaShankar</span>
+                </h1>
+                <h2 class="hero-subtitle animate-fade-in">MERN Stack Trainee | Web Developer</h2>
+                <p class="hero-text animate-fade-in">Building modern web applications with a passion for clean code and innovative solutions</p>
+                <div class="hero-buttons animate-fade-in">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+            </div>
+        </div>
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal">About Me</h2>
+                <p class="section-subtitle reveal">My introduction</p>
+            </div>
+            <div class="about-container">
+                <div class="about-info reveal">
+                    <div class="about-card">
+                        <p>
+                            Hello! I'm JheevaShankar, a passionate MERN Stack trainee and web developer with a strong interest in creating 
+                            responsive and dynamic web applications. With a focus on clean code and modern design principles, 
+                            I strive to build digital experiences that are both functional and aesthetically pleasing.
+                        </p>
+                        <p>
+                            Currently, I'm expanding my skills in the MERN (MongoDB, Express.js, React.js, Node.js) stack, 
+                            while also continuing to enhance my proficiency in HTML, CSS, and JavaScript. I am passionate about 
+                            learning new technologies and applying them to solve real-world problems.
+                        </p>
+                        <p>
+                            When I'm not coding, I enjoy exploring new technologies, participating in hackathons, and contributing to 
+                            open-source projects. I'm always open to new opportunities and collaborations that will help me grow as a developer.
+                        </p>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="#" class="btn btn-primary">Download CV</a>
+                        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape shape-3"></div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal">My Skills</h2>
+                <p class="section-subtitle reveal">What I bring to the table</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-title reveal">
+                    <h3>Technical Expertise</h3>
+                </div>
+                <div class="skills-grid reveal">
+                    <div class="skill-card">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <h3 class="skill-name">HTML5</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <h3 class="skill-name">CSS3</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js skill-icon"></i>
+                        <h3 class="skill-name">JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react skill-icon"></i>
+                        <h3 class="skill-name">React.js</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-node-js skill-icon"></i>
+                        <h3 class="skill-name">Node.js</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h3 class="skill-name">MongoDB</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt skill-icon"></i>
+                        <h3 class="skill-name">Git</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-server skill-icon"></i>
+                        <h3 class="skill-name">Express.js</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal">My Projects</h2>
+                <p class="section-subtitle reveal">Recent work</p>
+            </div>
+            <div class="projects-container">
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal web">
+                        <img src="https://via.placeholder.com/600x400?text=E-commerce+Flower+Shop" alt="E-commerce Flower Shop" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">E-commerce Flower Shop</h3>
+                            <p class="project-description">A responsive e-commerce website for a flower shop with shopping cart functionality and payment integration.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">React</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card reveal iot">
+                        <img src="https://via.placeholder.com/600x400?text=IoT+Bus+Ticketing" alt="IoT Bus Ticketing System" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">IoT Bus Ticketing System</h3>
+                            <p class="project-description">An innovative bus ticketing system using IoT technology to streamline the ticketing process.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">IoT</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card reveal ml">
+                        <img src="https://via.placeholder.com/600x400?text=Parkinson's+Disease+Detection" alt="Parkinson's Disease Detection" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">Parkinson's Disease Detection</h3>
+                            <p class="project-description">A machine learning project that detects Parkinson's disease through voice pattern analysis.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">ML</span>
+                                <span class="project-tag">TensorFlow</span>
+                                <span class="project-tag">Flask</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape shape-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-card">
+                            <div class="skills-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3>CSS</h3>
+                            <div class="skills-bar-container">
+                                <div class="skills-bar">
+                                    <div class="skills-percentage" style="width: 85%">
+                                        <span class="skills-percent">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-card">
+                            <div class="skills-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3>JavaScript</h3>
+                            <div class="skills-bar-container">
+                                <div class="skills-bar">
+                                    <div class="skills-percentage" style="width: 75%">
+                                        <span class="skills-percent">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-card">
+                            <div class="skills-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Machine Learning</h3>
+                            <div class="skills-bar-container">
+                                <div class="skills-bar">
+                                    <div class="skills-percentage" style="width: 65%">
+                                        <span class="skills-percent">65%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape shape-3"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">My Recent Work</span>
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-container reveal">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxvd2VyJTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="E-commerce Flower Shop">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-commerce Site for Flowers</h3>
+                        <p class="project-description">A responsive e-commerce platform for selling flowers with features like product listings, shopping cart, and checkout process.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVzJTIwdGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="IoT Bus Ticketing System">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">IoT-based Bus Ticketing System</h3>
+                        <p class="project-description">A smart project that allows passengers to take tickets without a conductor using IoT technology and embedded systems.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Web Interface</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnJhaW4lMjBzY2FufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Parkinson's Disease Detection">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Parkinson's Disease Detection</h3>
+                        <p class="project-description">A machine learning project for early detection of Parkinson's disease using ML algorithms to analyze voice recordings and movement patterns.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape shape-4"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal">Contact Me</h2>
+                <p class="section-subtitle reveal">Get in touch</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-card reveal">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope info-icon"></i>
+                            <div class="info-text">
+                                <h3>Email</h3>
+                                <p>jheeva.shankar@example.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt info-icon"></i>
+                            <div class="info-text">
+                                <h3>Phone</h3>
+                                <p>+91 9876543210</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt info-icon"></i>
+                            <div class="info-text">
+                                <h3>Location</h3>
+                                <p>Chennai, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input form-textarea" id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div id="form-response"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">Jheeva<span>Shankar</span></div>
+                <ul class="footer-links">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#skills" class="footer-link">Skills</a></li>
+                    <li><a href="#projects" class="footer-link">Projects</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer-social" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="footer-social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="copyright">&copy; 2023 JheevaShankar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scroll-up" id="scroll-up" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+                        </div>
+                        <div class="contact-card-data">
+                            <h3>Email</h3>
+                            <a href="mailto:jheeva.shankar@example.com" class="contact-button">
+                                jheeva.shankar@example.com
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-card-data">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/JheevaShankar" target="_blank" class="contact-button">
+                                github.com/JheevaShankar
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-card-data">
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/jheeva-shankar" target="_blank" class="contact-button">
+                                linkedin.com/in/jheeva-shankar
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input form-textarea" id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="form-response"></div>
+                </form>
+            </div>
+        </div>
+        <div class="shape shape-5"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2 class="footer-title">JheevaShankar</h2>
+                <p class="footer-description">Web Developer | MERN Stack Trainee</p>
+                
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://github.com/JheevaShankar" target="_blank" class="footer-social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/jheeva-shankar" target="_blank" class="footer-social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="footer-social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+                
+                <p class="footer-copy">&copy; 2025 JheevaShankar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
